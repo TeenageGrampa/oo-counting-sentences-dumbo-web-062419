@@ -17,6 +17,6 @@ class String
   def count_sentences
     sent_array = self.split(/!|\.|\.'|\?/)
     sent_array.reject{ |str| str.empty?}
-    sent_array.count
+    sent_array.length
   end
 end
